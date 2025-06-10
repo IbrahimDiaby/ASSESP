@@ -1791,13 +1791,13 @@ a:hover, a:focus, a.active {
 24. Content / #content
 -------------------------------------------------------------------*/
 #content {
-  /* width: 68.3%;
-  float: left; */
-  width: 100%;
+  width: 68.3%;
+  float: left;
+  /* width: 100%;
   display: flex;
   padding: 5px 0px;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 
 }
 
@@ -4556,6 +4556,16 @@ a:hover, a:focus, a.active {
 
 /*modification perso*/
 
+.my-4{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.py-4{
+  padding-top: calc(4*4px);
+  padding-bottom: calc(4*4px);
+}
+
 .gallery {
   padding: 10px 0px;
   display: flex;
@@ -4565,4 +4575,8 @@ a:hover, a:focus, a.active {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.socail-network.custom *:hover{
+  color: #fff;
 }

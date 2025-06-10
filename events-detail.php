@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Vicin | Multipurpose Construction & Plumbing HTML Template - THEME SHARED ON THEMELOCK.COM</title>
+	<title>Détail d'évènement | Association des Étudiants Sénégalais de Provence</title>
 	<!-- include the site stylesheet -->
 	<link href="https://fonts.googleapis.com/css?family=Arizonia%7COpen+Sans:300,300i,400,400i,600,700,800%7CRoboto:300,400,500,700" rel="stylesheet">
 	<!-- include the site stylesheet -->
@@ -24,96 +24,8 @@
 <body>
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
-		<!-- header of the page -->
-		<header id="header" class="style2">
-			<!-- header area of the page -->
-			<div class="header-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<ul class="contact-list list-unstyled">
-								<li><i class="icon fa fa-clock-o"></i> Opening Hours: Mon-Fri: 9am-6pm; Sat-Sun: 10am - 1pm</li>
-							</ul>
-							<ul class="sign-up list-unstyled">
-								<li><a href="#popup1" class="lightbox">log in</a></li>
-								<li>|</li>
-								<li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- header holder of the page -->
-			<div class="header-holder">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-							<!-- logo of the page -->
-							<div class="logo">
-								<a href="home.html"><img src="images/logo-f.png" alt="VICIN" class="img-responsive"></a>
-							</div>
-							<a href="#" class="nav-opener text-center md-round"><i class="fa fa-bars"></i></a>
-							<!-- nav of the page -->
-							<nav id="nav">
-								<ul class="list-unstyled">
-									<li>
-										<a href="#">Home</a>
-										<ul class="list-unstyled drop-down">
-											<li><a href="home.html">Homepage 1</a></li>
-											<li><a href="home2.html">Homepage 2</a></li>
-											<li><a href="home3.html">Homepage 3</a></li>
-											<li><a href="home4.html">Homepage 4</a></li>
-										</ul>
-									</li>
-									<li><a href="about.html">About us</a></li>
-									<li>
-										<a href="#">services</a>
-										<ul class="list-unstyled drop-down">
-											<li><a href="service.html">Services List</a></li>
-											<li><a href="service-detail.html">Services Details</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">projects</a>
-										<ul class="list-unstyled drop-down">
-											<li><a href="project1.html">projects 1</a></li>
-											<li><a href="project2.html">projects 2</a></li>
-											<li><a href="project-detail1.html">projects Details 1</a></li>
-											<li><a href="project-detail2.html">projects Details 2</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">pages</a>
-										<ul class="list-unstyled drop-down">
-											<li><a href="404page.html">404 page</a></li>
-											<li><a href="faq.html">faq</a></li>
-											<li><a href="login.html">login</a></li>
-											<li><a href="checkout.html">Checkout</a></li>
-											<li><a href="cart.html">Cart</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">SHOP</a>
-										<ul class="list-unstyled drop-down">
-											<li><a href="shop.html">Shop List</a></li>
-											<li><a href="shop-detail.html">Shop Details</a></li>
-										</ul>
-									</li>
-									<li class="active">
-										<a href="#">Blog</a>
-										<ul class="list-unstyled drop-down">
-											<li><a href="blog.html">Blog List</a></li>
-											<li><a href="blog-detail.html">Blog Details</a></li>
-										</ul>
-									</li>
-									<li><a href="contact.html">contact us</a></li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+		<?php include_once("config/data.php");
+		include_once("components/php/header2.php"); ?>
 		<!-- main of the page -->
 		<main id="main">
 			<!-- banner of the page -->
@@ -121,15 +33,15 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 text-center">
-							<h1 class="main-heading3 text-uppercase">Blog Detail</h1>
+							<h1 class="main-heading3 text-uppercase">Détails de l'évènement</h1>
 							<!-- breadcrumbs of the page -->
 							<nav class="breadcrumbs text-center">
 								<ul class="list-unstyled">
-									<li><a href="home.html">Home</a></li>
+									<li><a href="/">Accueil</a></li>
 									<li>></li>
-									<li><a href="blog.html">blog</a></li>
+									<li><a href="blog.html">Évènement</a></li>
 									<li>></li>
-									<li>Blog Detail</li>
+									<li>Titre</li>
 								</ul>
 							</nav>
 						</div>
@@ -159,7 +71,7 @@
 							</div>
 							<!-- comment block of the page -->
 							<div class="comments-block">
-								<h4>3 Comment</h4>
+								<h4>3 Commentaires</h4>
 								<!-- comment area of the page -->
 								<article class="comment-area">
 									<a href="#" class="img"><img src="https://placehold.co/70x70" alt="image description" class="img-responsive"></a>
@@ -201,20 +113,20 @@
 							</div>
 							<!-- comment form of the page -->
 							<div class="comment-form">
-								<h4 class="text-uppercase">LEAVE A COMMENT</h4>
-								<p>If you have any comment, Please don’t hesitate to send us a comment</p>
+								<h4 class="text-uppercase">LAISSER UN COMMENTIRE</h4>
+								<p>Si vous avez des commentaires, n'hésitez pas à nous les envoyer.</p>
 								<form action="#" class="contact-form">
 									<fieldset>
 										<div class="form-group">
 											<div class="col">
-												<input type="text" class="form-control" placeholder="Your Name">
+												<input type="text" class="form-control" placeholder="Votre Nom">
 											</div>
 											<div class="col">
-												<input type="email" class="form-control" placeholder="Your Email">
+												<input type="email" class="form-control" placeholder="Votre Email">
 											</div>
 										</div>
-										<textarea class="form-control" placeholder="Your Message"></textarea>
-										<button type="submit" class="btn text-uppercase text-center">POST COMMENT</button>
+										<textarea class="form-control" placeholder="Votre Message"></textarea>
+										<button type="submit" class="btn text-uppercase text-center">COMMENTER</button>
 									</fieldset>
 								</form>
 							</div>
@@ -223,7 +135,7 @@
 						<aside id="sidebar">
 							<!-- widget of the page -->
 							<section class="widget">
-								<h3 class="text-uppercase">Recent Posts</h3>
+								<h3 class="text-uppercase">Évènements récentes</h3>
 								<ul class="list-unstyled widget-nav">
 									<li><a href="#"><i class="ti-angle-right"></i> Overalls with logo as a method of advertising</a></li>
 									<li><a href="#"><i class="ti-angle-right"></i> The main objectives of the marketer</a></li>
@@ -258,91 +170,16 @@
 				</div>
 			</div>
 		</main>
-		<!-- footer of the page -->
-		<footer id="footer">
-			<!-- footer holder of the page -->
-			<div class="footer-holder">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 col-md-3">
-							<h3 class="text-uppercase">About us</h3>
-							<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3">
-							<h3 class="text-uppercase">Get in Touch</h3>
-							<!-- contact list of the page -->
-							<ul class="list-unstyled contact-list">
-								<li>
-									<span class="icon ti-location-pin"></span>
-									<address>1600 Amphitheatre Parkway <br>Mountain View CA 94043</address>
-								</li>
-								<li>
-									<span class="icon ti-email"></span>
-									<a href="mailto:&#105;&#110;&#102;&#111;&#046;&#100;&#101;&#101;&#114;&#099;&#114;&#101;&#097;&#116;&#105;&#118;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;">&#105;&#110;&#102;&#111;&#046;&#100;&#101;&#101;&#114;&#099;&#114;&#101;&#097;&#116;&#105;&#118;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a>
-								</li>
-								<li>
-									<span class="icon ti-headphone-alt"></span>
-									<a href="tel:18005596580">+1 800 559 6580</a>
-								</li>
-							</ul>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3">
-							<h3 class="text-uppercase">Opening Hours</h3>
-							<!-- hour list of the page -->
-							<ul class="list-unstyled hour-list">
-								<li>Our support  24 / 7</li>
-								<li>Monday – Friday: 9am-6pm</li>
-								<li>Saturday: 10am-4pm</li>
-								<li>Sunday: 10am-1pm</li>
-							</ul>
-						</div>
-						<div class="col-xs-12 col-sm-6 col-md-3">
-							<h3 class="text-uppercase">Subscribe</h3>
-							<p>Subscribe to our mailing list to get the updates to your email inbox.</p>
-							<!-- Subscribe form of the page -->
-							<form action="#" class="subscribe-form">
-								<fieldset>
-									<input type="email" class="form-control" placeholder="your email here">
-									<button type="submit"><i class="fa fa-paper-plane-o"></i></button>
-								</fieldset>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- footer area of the page -->
-			<div class="footer-area">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6">
-							<p>Copyrights © 2017 All Rights Reserved.</p>
-						</div>
-						<div class="col-xs-12 col-sm-6">
-							<!-- Socail network of the page -->
-							<ul class="socail-network list-unstyled">
-								<li><a href="#" class="social_facebook"></a></li>
-								<li><a href="#" class="social_linkedin"></a></li>
-								<li><a href="#" class="social_twitter"></a></li>
-								<li><a href="#" class="fa fa-google-plus"></a></li>
-								<li><a href="#" class="social_pinterest"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- back top of the page -->
-		<span id="back-top" class="text-center md-round fa fa-caret-up"></span>
-		<!-- loader of the page -->
-		<div id="loader" class="loader-holder">
-	      <div class="block"><img src="images/svg/hearts.svg" width="100" alt="loader"></div>
-	    </div>
+		<?php include_once("components/php/footer2.php"); ?>
+		<?php include_once("components/php/ui/back-top.php"); ?>
+		<?php include_once("components/php/ui/loader.php"); ?>
+		
 	</div>
 	<div class="popup-holder">
 		<div id="popup1" class="lightbox">
 			<form action="#" class="signup-form text-center">
 				<fieldset>
-					<h2>Sign in to <span class="clr">Vicin</span></h2>
+					<h2>Sign in to <span class="clr">ASSESP</span></h2>
 					<p>Enter your details below.</p>
 					<div class="form-group">
 						<input type="email" class="form-control" placeholder="EMAIL ADDRESS">

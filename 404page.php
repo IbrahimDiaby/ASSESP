@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>404 | Association des Étufdiants Sénégalais de Provence</title>
+	<title>404 | Association des Étudiants Sénégalais de Provence</title>
 	<!-- include the site stylesheet -->
 	<link
 		href="https://fonts.googleapis.com/css?family=Arizonia%7COpen+Sans:300,300i,400,400i,600,700,800%7CRoboto:300,400,500,700"
@@ -67,12 +67,8 @@
 			<?php include_once("components/php/contact-box.php"); ?>
 		</main>
 		<?php include_once("components/php/footer2.php"); ?>
-		<!-- back top of the page -->
-		<span id="back-top" class="text-center md-round fa fa-caret-up"></span>
-		<!-- loader of the page -->
-		<div id="loader" class="loader-holder">
-			<div class="block"><img src="images/svg/hearts.svg" width="100" alt="loader"></div>
-		</div>
+		<?php include_once("components/php/ui/back-top.php"); ?>
+		<?php include_once("components/php/ui/loader.php"); ?>
 	</div>
 	<div class="popup-holder">
 		<div id="popup1" class="lightbox">

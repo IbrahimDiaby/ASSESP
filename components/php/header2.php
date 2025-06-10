@@ -8,6 +8,12 @@
                     <ul class="contact-list list-unstyled">
                         <li><i class="icon fa fa-clock-o"></i> Nous sommes ouverts 24h/7j</li>
                     </ul>
+                    <!-- socail network of the page -->
+                    <ul class="socail-network list-unstyled custom">
+                        <li><a href="<? echo $ASSESP_DATA["facebook"] ?>" class="social_facebook"></a></li>
+                        <li><a href="<? echo $ASSESP_DATA["linkedin"] ?>" class="social_linkedin"></a></li>
+                        <li><a href="<? echo $ASSESP_DATA["instagram"] ?>" class="social_instagram"></a></li>
+                    </ul>
                     <!-- <ul class="sign-up list-unstyled">
                         <li><a href="#popup1" class="lightbox">log in</a></li>
                         <li>|</li>

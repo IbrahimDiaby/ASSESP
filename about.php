@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>À Propos | Association des Étufdiants Sénégalais de Provence</title>
+	<title>À Propos | Association des Étudiants Sénégalais de Provence</title>
 	<!-- include the site stylesheet -->
-	<link href="https://fonts.googleapis.com/css?family=Arizonia%7COpen+Sans:300,300i,400,400i,600,700,800%7CRoboto:300,400,500,700" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Arizonia%7COpen+Sans:300,300i,400,400i,600,700,800%7CRoboto:300,400,500,700"
+		rel="stylesheet">
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<!-- include the site stylesheet -->
@@ -21,6 +24,7 @@
 	<!-- include the site stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
 	<!-- main container of all the page elements -->
 	<div id="wrapper">
@@ -50,7 +54,12 @@
 				<div class="row holder">
 					<div class="col-xs-12 col-sm-8 col-md-6">
 						<h2 class="main-heading text-uppercase">Nous sommes l'ASSESP</h2>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia c. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. </p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+							architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+							aspernatur aut odit aut fugit, sed quia c. Eaque ipsa quae ab illo inventore veritatis et
+							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
+							sit aspernatur aut odit aut fugit. </p>
 					</div>
 					<div class="col-xs-12 col-sm-4 col-md-6">
 						<div class="img-holder">
@@ -61,7 +70,18 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<h2 class="main-heading text-uppercase">Pourquoi l'ASSESP ?</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+							labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+							laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+							voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+							cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
+							ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+							architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+							aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+							voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+							consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+							dolore magnam aliquam quaerat voluptatem.</p>
 					</div>
 				</div>
 			</section>
@@ -77,76 +97,27 @@
 						<div class="col-xs-12">
 							<!-- team slider of the page -->
 							<div class="team-slider">
-								<!-- team of the page -->
-								<div class="team">
-									<img src="https://placehold.co/270x300" alt="image description" class="img-responsive">
-									<div class="over">
-										<strong class="title text-uppercase">Don Alexis</strong>
-										<p>nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
-										<ul class="socail-network list-unstyled">
-											<li><a href="#" class="social_facebook"></a></li>
-											<li><a href="#" class="social_linkedin"></a></li>
-											<li><a href="#" class="social_twitter"></a></li>
-											<li><a href="#" class="fa fa-google-plus"></a></li>
-										</ul>
+								<?php
+								for ($i = 0; $i < 8; $i++) {
+									?>
+									<!-- team of the page -->
+									<div class="team">
+										<img src="https://placehold.co/270x300" alt="image description"
+											class="img-responsive">
+										<div class="over">
+											<strong class="title text-uppercase">NOM PRéNOM</strong>
+											<p>Petit résumé des actions menées dans l'association. Il est important de mettre en avant chaque memmbre.</p>
+											<ul class="socail-network list-unstyled">
+												<li><a href="#" class="social_facebook"></a></li>
+												<li><a href="#" class="social_linkedin"></a></li>
+												<li><a href="#" class="social_twitter"></a></li>
+												<li><a href="#" class="fa fa-instagram"></a></li>
+											</ul>
+										</div>
 									</div>
-								</div>
-								<!-- team of the page -->
-								<div class="team">
-									<img src="https://placehold.co/270x300" alt="image description" class="img-responsive">
-									<div class="over">
-										<strong class="title text-uppercase">ANNA GREEN</strong>
-										<p>nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
-										<ul class="socail-network list-unstyled">
-											<li><a href="#" class="social_facebook"></a></li>
-											<li><a href="#" class="social_linkedin"></a></li>
-											<li><a href="#" class="social_twitter"></a></li>
-											<li><a href="#" class="fa fa-google-plus"></a></li>
-										</ul>
-									</div>
-								</div>
-								<!-- team of the page -->
-								<div class="team">
-									<img src="https://placehold.co/270x300" alt="image description" class="img-responsive">
-									<div class="over">
-										<strong class="title text-uppercase">Luis Philipe</strong>
-										<p>nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
-										<ul class="socail-network list-unstyled">
-											<li><a href="#" class="social_facebook"></a></li>
-											<li><a href="#" class="social_linkedin"></a></li>
-											<li><a href="#" class="social_twitter"></a></li>
-											<li><a href="#" class="fa fa-google-plus"></a></li>
-										</ul>
-									</div>
-								</div>
-								<!-- team of the page -->
-								<div class="team">
-									<img src="https://placehold.co/270x300" alt="image description" class="img-responsive">
-									<div class="over">
-										<strong class="title text-uppercase">Jamie</strong>
-										<p>nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
-										<ul class="socail-network list-unstyled">
-											<li><a href="#" class="social_facebook"></a></li>
-											<li><a href="#" class="social_linkedin"></a></li>
-											<li><a href="#" class="social_twitter"></a></li>
-											<li><a href="#" class="fa fa-google-plus"></a></li>
-										</ul>
-									</div>
-								</div>
-								<!-- team of the page -->
-								<div class="team">
-									<img src="https://placehold.co/270x300" alt="image description" class="img-responsive">
-									<div class="over">
-										<strong class="title text-uppercase">Jamie</strong>
-										<p>nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.</p>
-										<ul class="socail-network list-unstyled">
-											<li><a href="#" class="social_facebook"></a></li>
-											<li><a href="#" class="social_linkedin"></a></li>
-											<li><a href="#" class="social_twitter"></a></li>
-											<li><a href="#" class="fa fa-google-plus"></a></li>
-										</ul>
-									</div>
-								</div>
+									<?php
+								}
+								?>
 							</div>
 						</div>
 					</div>
@@ -155,12 +126,8 @@
 			<?php include_once("components/php/contact-box.php"); ?>
 		</main>
 		<?php include_once("components/php/footer2.php"); ?>
-		<!-- back top of the page -->
-		<span id="back-top" class="text-center md-round fa fa-caret-up"></span>
-		<!-- loader of the page -->
-		<div id="loader" class="loader-holder">
-	      <div class="block"><img src="images/svg/hearts.svg" width="100" alt="loader"></div>
-	    </div>
+		<?php include_once("components/php/ui/back-top.php"); ?>
+		<?php include_once("components/php/ui/loader.php"); ?>
 	</div>
 	<div class="popup-holder">
 		<div id="popup1" class="lightbox">
@@ -185,4 +152,5 @@
 	<!-- include jQuery -->
 	<script src="js/jquery.main.js"></script>
 </body>
+
 </html>
