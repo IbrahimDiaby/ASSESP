@@ -1791,8 +1791,14 @@ a:hover, a:focus, a.active {
 24. Content / #content
 -------------------------------------------------------------------*/
 #content {
-  width: 68.3%;
-  float: left;
+  /* width: 68.3%;
+  float: left; */
+  width: 100%;
+  display: flex;
+  padding: 5px 0px;
+  align-items: center;
+  justify-content: center;
+
 }
 
 #content .post-blog {
@@ -4550,23 +4556,13 @@ a:hover, a:focus, a.active {
 
 /*modification perso*/
 
-#theme{
-  position: relative;
-  top: 40px;
-  color: white;
-  font-size: 1.5em;
-}
-#barre{
-  border-radius: 4px;
-  width: 80%;
-  position: relative;
-  top: 20px;
-}
-.side-left{
-  border: 1px solid yellow;
-  background-color: yellow;
-  height: 200px;
-}
-.haut{
-  border: 2px solid black;
+.gallery {
+  padding: 10px 0px;
+  display: flex;
+  flex-basis: 30%;
+  flex-direction: row;
+  gap: 10px 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }

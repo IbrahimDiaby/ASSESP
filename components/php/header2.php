@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-xs-12">
                     <ul class="contact-list list-unstyled">
-                        <li><i class="icon fa fa-clock-o"></i> Nous sommes ouverts 24/7</li>
+                        <li><i class="icon fa fa-clock-o"></i> Nous sommes ouverts 24h/7j</li>
                     </ul>
                     <!-- <ul class="sign-up list-unstyled">
                         <li><a href="#popup1" class="lightbox">log in</a></li>
@@ -24,8 +24,8 @@
                 <div class="col-xs-12">
                     <!-- logo of the page -->
                     <div class="logo">
-                        <!-- <a href="/"><img src="images/logo-f.png" alt="ASSESP" class="img-responsive"></a> -->
-                         <a class="text-uppercase text-white text-logo font-fold" href="/">ASSESP</a>
+                        <a href="/"><img src="images/logo-assesp.png" alt="ASSESP" class="img-responsive"></a>
+                         <!-- <a class="text-uppercase text-white text-logo font-fold" href="/">ASSESP</a> -->
                     </div>
                     <a href="#" class="nav-opener text-center md-round"><i class="fa fa-bars"></i></a>
                     <!-- nav of the page -->

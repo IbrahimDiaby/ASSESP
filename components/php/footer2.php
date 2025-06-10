@@ -31,7 +31,7 @@
 							<!-- Hour list of the page -->
 							<ul class="list-unstyled hour-list">
 								<li>Plus proches de vous que jamais.</li>
-								<li>Nous sommes ouverts 24 / 7</li>
+								<li>Nous sommes ouverts 24h/7j</li>
 							</ul>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-3">

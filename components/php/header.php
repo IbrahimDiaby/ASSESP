@@ -29,8 +29,8 @@
                 <div class="col-xs-12">
                     <!-- logo of the page -->
                     <div class="logo">
-                        <!-- <a href="home.html"><img src="images/logo.png" alt="VICIN" class="img-responsive"></a> -->
-                          <a class="text-uppercase text-white text-logo font-bold" href="/">ASSESP</a>
+                        <a href="/"><img src="images/logo-assesp.png" alt="ASSESP" class="img-responsive"></a>
+                          <!-- <a class="text-uppercase text-white text-logo font-bold" href="/">ASSESP</a> -->
                     </div>
                     <a href="#" class="nav-opener text-center md-round"><i class="fa fa-bars"></i></a>
                     <!-- nav of the page -->
