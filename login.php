@@ -32,21 +32,24 @@
 		<!-- main of the page -->
 		<main id="main">
 			<!-- login sec of the page -->
-			<section class="login-sec">
+			<section class="section">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<form action="#" class="signup-form text-center">
+							<form method="POST" action="scripts/login.php" class="signup-form text-center">
 								<a href="/" class="py-4"><img src="images/logo-assesp.png" alt="ASSESP" title="Accueil" class="img-responsive"></a>
 								<fieldset>
 									<h2 class="text-uppercase">Connectez-vous au dashboard <span
 											class="clr">ASSESP</span></h2>
 									<p>Entrez vos informations administrateur ci-dessous.</p>
 									<div class="form-group">
-										<input type="email" class="form-control"
-											placeholder="<?php echo $ASSESP_DATA["email"] ?>">
-										<input type="password" class="form-control"
-											placeholder="************************">
+										<input type="email" class="form-control" name="email"
+											placeholder="<?php echo $ASSESP_DATA["email"] ?>" required>
+										<input type="password" class="form-control" name="password"
+											placeholder="************************" required>
+									</div>
+									<div class="form-group">
+										<span class="d-flex"><input type="checkbox" id="remember" name="remember"> Se souvenir de moi</span>
 									</div>
 									<button type="submit" class="btn text-center text-uppercase">Se connecter</button>
 									<a href="#">Mot de passe oublié?</a>

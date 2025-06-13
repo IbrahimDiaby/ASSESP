@@ -2283,6 +2283,11 @@ a:hover, a:focus, a.active {
   text-decoration: none;
 }
 
+.abt-sec .img-holder-left {
+  float: left;
+  width: 310px;
+}
+
 .abt-sec .img-holder {
   float: right;
   width: 310px;
@@ -4579,4 +4584,11 @@ a:hover, a:focus, a.active {
 
 .socail-network.custom *:hover{
   color: #fff;
+}
+
+.d-flex {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1px 5px;
 }
