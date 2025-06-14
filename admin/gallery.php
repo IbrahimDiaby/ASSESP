@@ -18,37 +18,11 @@
     </style>
     <title>Dashboard</title>
 </head>
-<?php
-$urls = [
-    [
-        "path" => ["/admin", "/admin/index.php"],
-        "label" => "Acceuil",
-    ],
-    [
-        "path" => ["/admin/about.php"],
-        "label" => "À propos",
-    ],
-    [
-        "path" => ["/admin/events.php"],
-        "label" => "Évenements",
-    ],
-    [
-        "path" => ["/admin/gallery.php"],
-        "label" => "Gallerie",
-    ],
-    [
-        "path" => ["/admin/contact.php"],
-        "label" => "Contact",
-    ]
-];
-
-$n = count($urls);
-?>
-
 <body>
+    <?php include_once(__DIR__."/config/constants.php"); ?>
 
     <div class="flex flex-col w-full min-h-screen">
-        <nav class="flex px-4 bg-green-400 h-20 justify-end">
+        <nav class="flex px-4 bg-green-400 h-20 justify-end shadow-lg shadow-slate-300">
             <div class="">
                 <div
                     class="flex lg:hidden drawer-btn transition transform delay-75 duration-1000 cursor-pointer hover:scale-150 absolute top-5 left-10">
@@ -57,7 +31,7 @@ $n = count($urls);
                 <div
                     class="hidden lg:flex size-20 drawer-btn transition transform delay-75 duration-1000 cursor-pointer hover:scale-150 absolute top-5 left-10">
                     <div class="logo">
-                        <a href="/admin"><img src="images/logo-assesp.png" alt="ASSESP" class="img-responsive"></a>
+                        <a href="/admin"><img src="/images/logo-assesp.png" alt="ASSESP" class="img-responsive"></a>
                         <!-- <a class="text-uppercase text-white text-logo font-bold" href="/">ASSESP</a> -->
                     </div>
                 </div>
@@ -111,10 +85,10 @@ $n = count($urls);
                                 Image
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Username
+                                Description
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Role
+                                Tag
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Date

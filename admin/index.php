@@ -18,37 +18,10 @@
     </style>
     <title>Dashboard</title>
 </head>
-<?php
-$urls = [
-    [
-        "path" => ["/admin", "/admin/index.php"],
-        "label" => "Acceuil",
-    ],
-    [
-        "path" => ["/admin/about.php"],
-        "label" => "À propos",
-    ],
-    [
-        "path" => ["/admin/events.php"],
-        "label" => "Évenements",
-    ],
-    [
-        "path" => ["/admin/gallery.php"],
-        "label" => "Gallerie",
-    ],
-    [
-        "path" => ["/admin/contact.php"],
-        "label" => "Contact",
-    ]
-];
-
-$n = count($urls);
-?>
-
 <body>
-
+    <?php include_once(__DIR__."/config/constants.php"); ?>
     <div class="flex flex-col w-full min-h-screen">
-        <nav class="flex px-4 bg-green-400 h-20 justify-end">
+        <nav class="flex px-4 bg-green-400 h-20 justify-end shadow-lg shadow-slate-300">
             <div class="">
                 <div
                     class="flex lg:hidden drawer-btn transition transform delay-75 duration-1000 cursor-pointer hover:scale-150 absolute top-5 left-10">
@@ -57,7 +30,7 @@ $n = count($urls);
                 <div
                     class="hidden lg:flex size-20 drawer-btn transition transform delay-75 duration-1000 cursor-pointer hover:scale-150 absolute top-5 left-10">
                     <div class="logo">
-                        <a href="/admin"><img src="images/logo-assesp.png" alt="ASSESP" class="img-responsive"></a>
+                        <a href="/admin"><img src="/images/logo-assesp.png" alt="ASSESP" class="img-responsive"></a>
                         <!-- <a class="text-uppercase text-white text-logo font-bold" href="/">ASSESP</a> -->
                     </div>
                 </div>
@@ -83,6 +56,7 @@ $n = count($urls);
                 <ul class="flex flex-col w-full ps-4">
                     <?php
                     for ($i = 0; $i < $n; $i++) {
+                        $id = $i;
                         ?>
                         <li
                             class="font-bold py-4 ps-2 <?php echo ((count($urls[$i]["path"]) == 1) ? strcmp(strtolower($_SERVER["REQUEST_URI"]), $urls[$i]["path"][0]) === 0 : (strcmp(strtolower($_SERVER["REQUEST_URI"]), $urls[$i]["path"][0]) === 0 || strcmp(strtolower($_SERVER["REQUEST_URI"]), $urls[$i]["path"][1]) === 0)) ? "flex bg-white pe-4 w-full rounded-tl-sm rounded-bl-sm shadow-lg shadow-white" : "" ?>">
@@ -96,7 +70,7 @@ $n = count($urls);
             <section class="my-10 relative items-center overflow-x-auto">
                 <div class="flex justify-end my-4 font-bold">
                     <div class="mb-4">
-                        <a href="#"
+                        <a href="admin/users/add.php"
                             class="transition text-white transform delay-75 duration-700 cursor-pointer py-4 text-lg px-4 bg-green-400 uppercase rounded-sm border-1 border-green-400 hover:bg-white hover:text-green-400"><i
                                 class="fa fa-plus"></i> Ajouter</a>
                     </div>
@@ -138,15 +112,14 @@ $n = count($urls);
                                 <td class="px-6 py-4">Role</td>
                                 <td class="px-6 py-4">Date</td>
                                 <td class="px-6 py-4">
-                                    <i class="px-2 fa fa-eye cursor-pointer text-lg text-sky-400"></i>
-                                    <i class="px-2 fa fa-edit cursor-pointer text-lg text-green-400"></i>
-                                    <i class="px-2 fa fa-trash cursor-pointer text-lg text-red-400"></i>
-                                    <!-- <span
-                                        class="transition delay-75 transform duration-1000 hover:scale-105 px-4 py-2 bg-sky-400 text-white cursor-pointer">Voir</span>
-                                    <span
-                                        class="transition delay-75 transform duration-1000 hover:scale-105 px-4 py-2 bg-green-400 text-white cursor-pointer">Modifier</span>
-                                    <span
-                                        class="transition delay-75 transform duration-1000 hover:scale-105 px-4 py-2 bg-red-400 text-white cursor-pointer">Supprimer</span> -->
+                                    <div class="flex">
+                                        <form action="users/show.php?id=<?php echo $id; ?>" method="post"><i
+                                                class="px-2 fa fa-eye cursor-pointer text-lg text-sky-400"></i></form>
+                                        <form action="users/edit.php?id=<?php echo $id; ?>" method="post"><i
+                                                class="px-2 fa fa-edit cursor-pointer text-lg text-green-400"></i></form>
+                                        <form action="users/delete.php?id=<?php echo $id; ?>" method="post"><i
+                                                class="px-2 fa fa-trash cursor-pointer text-lg text-red-400"></i></form>
+                                    </div>
                                 </td>
                             </tr>
                             <?php
