@@ -111,11 +111,11 @@
 					<h2>Connectez-vous <span class="clr">ASSESP</span></h2>
 					<p>Entre vos informations de connexion ci-dessous.</p>
 					<div class="form-group">
-						<input type="email" class="form-control" placeholder="Email">
-						<input type="password" class="form-control" placeholder="Password">
+						<input type="email" name="email" class="form-control" placeholder="Email">
+						<input type="password" name="password" class="form-control" placeholder="Password">
 					</div>
 					<button type="submit" class="btn text-center text-uppercase">Se Connecter</button>
-					<a href="#">Mot de passe oublié?</a>
+					<a href="/forgot-password.php">Mot de passe oublié?</a>
 				</fieldset>
 			</form>
 		</div>

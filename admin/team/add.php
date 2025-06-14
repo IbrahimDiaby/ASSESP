@@ -18,8 +18,9 @@
     </style>
     <title>Dashboard</title>
 </head>
+
 <body>
-      <?php include_once(__DIR__."/../config/constants.php"); ?>
+<?php include_once(__DIR__."/../config/constants.php"); ?>
     <div class="flex flex-col w-full min-h-screen">
         <nav class="flex px-4 bg-green-400 h-20 justify-end shadow-lg shadow-slate-300">
             <div class="">

@@ -69,7 +69,7 @@
             <section class="my-10 relative items-center overflow-x-auto">
                 <div class="flex justify-end my-4 font-bold">
                     <div class="mb-4">
-                        <a href="#"
+                        <a href="/admin/events/add.php"
                             class="transition text-white transform delay-75 duration-700 cursor-pointer py-4 text-lg px-4 bg-green-400 uppercase rounded-sm border-1 border-green-400 hover:bg-white hover:text-green-400"><i
                                 class="fa fa-plus"></i> Ajouter</a>
                     </div>
