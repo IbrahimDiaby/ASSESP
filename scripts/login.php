@@ -1,5 +1,7 @@
 <?php
 include_once("response.php");
+include_once("database//database.php");
+
 if ($_POST) {
     $email = $_POST["email"] ?? "";
     $password = $_POST["password"] ?? "";
@@ -22,4 +24,7 @@ if ($_POST) {
         // $response["errors"]["remember"] = empty($remember) ? true : false;
     }
 }
+
+$database = new Database();
+$database->connexion();
 ?>

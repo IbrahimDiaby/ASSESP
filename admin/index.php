@@ -88,7 +88,7 @@
                                 Username
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Role
+                                Email
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Date
@@ -109,7 +109,7 @@
                                     class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                                     Username
                                 </th>
-                                <td class="px-6 py-4">Role</td>
+                                <td class="px-6 py-4">Email</td>
                                 <td class="px-6 py-4">Date</td>
                                 <td class="px-6 py-4">
                                     <div class="flex">
